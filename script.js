@@ -13,23 +13,24 @@
  * TODO: Use the initGame() function to restart the game
  */
 
-// Variable to store the list of guesses 
+
+
+
+  // Variable to store the list of guesses 
 let guesses = [];
 
-// Variable for store the correct random number 
-let correctNumber = getRandomNumber();
-// console.log(correctNumber)    //To display the Random Number
-
-
-
-window.onload = function() {
-    document.getElementById("number-submit").addEventListener("click", playGame);
-    document.getElementById("restart-game").addEventListener("click", initGame)
-    // showYouWon();
-    // showNumberAbove();
-    // showNumberBelow();
+function changeRandom() {
+  userChoice = +document.getElementById("userChoice").value 
+  console.log("userChoice : ", userChoice)
+  correctNumber = getRandomNumber();
+  console.log("correctNumber : ", correctNumber)
+  
 }
 
+  document.getElementById("number-submit").addEventListener("click", playGame);
+  document.getElementById("restart-game").addEventListener("click", initGame)
+
+    
 /**
  * Functionality for playing the whole game
  */
@@ -89,7 +90,7 @@ function resetResultContent(){
 function getRandomNumber(){
   // *CODE GOES BELOW HERE *
   let randomNumber = Math.random() ;
-  let wholeNumber =Math.floor(randomNumber * 100) + 1;
+  let wholeNumber =Math.floor(randomNumber * userChoice) + 1;
   return wholeNumber;
 }
 
