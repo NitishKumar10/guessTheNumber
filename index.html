@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>  
     <title>Guess The Number</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body class="text-center">
     <nav class="navbar navbar-dark bg-danger">
         <!-- Navbar content -->
         <a class="navbar-brand" href="#">Guess The Number</a>
     </nav>
+
+        <!-- User Choice -->
+    <input type="number"  id = "userChoice" placeholder="SetLimit" min = "0" max = "100">
+    <button type="submit" onclick = "changeRandom()"> submit</button>
+
     <main>
         <h1 class="banner p-4">Enter You'r Guess Below</h1>
         <div class="form-group ">
@@ -25,6 +29,9 @@
             <!-- This is where the guess history will be-->
         </div>
     </main>
+    
+    <script src="script.js"></script>
+
 </body>
 </html>
 
