@@ -1,3 +1,8 @@
+body{
+    background-color: rgb(17, 15, 15);
+
+}
+
 #number-guess, #result, #history {
     max-width: 400px;
     margin: 0 auto;
@@ -8,7 +13,7 @@
 }
   
 .banner {
-    color: #FFD23F;
-    font-size: 90px;
+    color: #ffffff;
+    font-size: 60px;
     font-family: sans-serif;
 }
