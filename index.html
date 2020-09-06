@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html> 
-<head>  
+<head>   
     <title>Guess The Number</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -10,13 +10,13 @@
         <!-- Navbar content -->
         <a class="navbar-brand" href="#">Guess The Number</a>
     </nav>
-
+    <br>
         <!-- User Choice -->
-    <input type="number"  id = "userChoice" placeholder="SetLimit" min = "0" max = "100">
-    <button type="submit" onclick = "changeRandom()"> submit</button>
+    <input type="number" class="form-control form-control-lg"   id = "userChoice" placeholder=" User Need's to Set Limit Here!!" min = "0" max = "100"> <br>
+    <button type="submit" class ="btn btn-lg btn-secondary" onclick = "changeRandom()"> save</button>
 
     <main>
-        <h1 class="banner p-4">Enter You'r Guess Below</h1>
+        <h1 class="banner p-4">Enter Your Guess Below</h1>
         <div class="form-group ">
             <input id="number-guess" class="form-control form-control-lg" type="number" placeholder="What's your guess?">
         </div>
